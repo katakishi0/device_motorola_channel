@@ -164,7 +164,6 @@ BOARD_RAMDISK_USE_XZ := true
 TARGET_KERNEL_SOURCE := kernel/motorola/sdm632
 TARGET_KERNEL_CONFIG := channel_defconfig
 TARGET_KERNEL_VERSION := 4.9
-TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
 # Declare boot header
