@@ -126,6 +126,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/mot_s5k3l6_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_s5k3l6_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/s5k4h7_channel_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k4h7_channel_chromatix.xml
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
