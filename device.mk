@@ -380,6 +380,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.system.net.netd@1.1.vendor \
     android.hardware.secure_element@1.0.vendor:64 \
+    CarrierConfigOverlay \
     librmnetctl \
     libprotobuf-cpp-full
 
