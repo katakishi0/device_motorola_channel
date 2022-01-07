@@ -437,8 +437,8 @@ vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 -vendor/lib64/libgpustats.so
 vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libmmosal.so
+vendor/lib64/libmmosal_proprietary.so
 
 # Offmode charging
 vendor/bin/hvdcp_opti
@@ -544,6 +544,7 @@ product/framework/QtiTelephonyServicelibrary.jar:system_ext/framework/QtiTelepho
 product/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar
 product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar|96154b2576114dd566bbc99a2d9af612de8849df
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/ipacm-diag
@@ -559,7 +560,6 @@ vendor/etc/init/dataadpl.rc
 vendor/etc/init/dataqti.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/port-bridge.rc
-vendor/bin/hw/qcrild
 vendor/etc/init/qcrild.rc
 vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
@@ -568,7 +568,6 @@ vendor/lib/libnetmgr.so
 vendor/lib/libpdmapper.so
 vendor/lib/libpdnotifier.so
 -vendor/lib/libqmiservices.so
-vendor/lib64/deviceInfoServiceModule.so
 vendor/lib/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.0.so
@@ -594,6 +593,7 @@ vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so
+vendor/lib64/deviceInfoServiceModule.so
 vendor/lib64/libadropbox.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblog_vendor.so
