@@ -69,6 +69,9 @@ vendor.display.enable_default_color_mode=1
 # Cutout
 ro.support_hide_display_cutout=true
 
+# Dex
+pm.dexopt.shared=quicken
+
 # Display
 ro.sf.hwc_set_default_colormode=true
 debug.renderengine.backend=threaded
