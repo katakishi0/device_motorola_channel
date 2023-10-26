@@ -55,19 +55,21 @@ vendor/lib/rfsa/adsp/capi_v2_smartAmp_TAS25xx.so.1
 vendor/lib/rfsa/adsp/tas2560_TI_0.bin
 vendor/lib/rfsa/adsp/tas2560_TI_1.bin
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbt-hidlclient.so
-vendor/lib64/libbtnv.so
+# ANT+ - from deen_sprout - QPKS30.54-22-27
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|4b62afdda74f01a09b62ca0b754c3693f97b3ba0d7
 
-# Bluetooth (shared dependencies)
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
-
-# Bluetooth Audio
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+# Bluetooth - from LA.UM.10.6.2.r1-02500-89xx.0
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|34317bdfb200d3e0e09a49ffbb978804c4363407
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|f9ae8ef97f30f056bede0660e96c8c37a51abfa8
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|37ff9b84e9b3563b091f822bf26f9f514a53586c
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|82c587746c8f256e2d943d0d5d20fa473892e704
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|e713e45138e9ad5205694719c3d3e851a7fe6cea
+vendor/lib64/libbt-hidlclient.so|0916996d7449c1ddfe5af3ba9d2dbf87f87988d6
+vendor/lib64/libbtnv.so|c652181b2ae218c958a49e615371b5187e7c4b88
+vendor/lib64/libsoc_helper.so|6d49890e8c978eb34474c413c7d253edd35e3ab3
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|b4ed4f178204e6a4a2706917b7e7d467dff6a56e
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|c3a4cd2cbfe14578d72381f0743a97ba62fd5957
 
 # CNE
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
