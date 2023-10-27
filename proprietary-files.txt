@@ -484,11 +484,10 @@ vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# Peripheral manager - from LA.UM.10.6.2.r1-02500-89xx.0
+vendor/bin/pm-proxy|7b897d3a4aae8297a0e0b54bdcf5f0a8ef3f7a97
+vendor/bin/pm-service|45cf641ec40478289aed906209f01418d67a09ac
+vendor/lib64/libperipheral_client.so|d31195fdcb56f7cba8034f5a7f7d38b401332c63
 
 # Postprocessing
 vendor/lib64/libdisp-aba.so
