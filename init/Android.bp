@@ -16,16 +16,6 @@
 cc_library_static {
     name: "libinit_channel",
     recovery_available: true,
-    srcs: [
-        "init_channel.cpp",
-        "DeviceLibinit.cpp"
-    ],
-    include_dirs: [
-        "system/core/init",
-        "device/motorola/channel",
-        "system/libbase/include",
-    ],
-    shared_libs: [
-        "libbase",
-    ]
+    shared_libs: ["libbase"],
+    srcs: ["init_channel.cpp"],
 }
