@@ -183,24 +183,22 @@ PRODUCT_PACKAGES += \
     libfmjni
 
 # GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0-impl-qti:64 \
-    android.hardware.gnss@2.0-service-qti \
-    libbatching \
-    libgeofencing \
-    libgnss \
-    libgnsspps \
-    libsynergy_loc_api \
-    libwifi-hal-ctrl
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+    $(LOCAL_PATH)/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    $(LOCAL_PATH)/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    $(LOCAL_PATH)/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    $(LOCAL_PATH)/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+    $(LOCAL_PATH)/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
+    $(LOCAL_PATH)/gps/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf
 
 PRODUCT_PACKAGES += \
-    apdr.conf \
-    flp.conf \
-    gps.conf \
-    izat.conf \
-    lowi.conf \
-    sap.conf \
-    xtwifi.conf
+    libminijail \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
