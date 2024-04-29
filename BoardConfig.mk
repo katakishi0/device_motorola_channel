@@ -121,6 +121,10 @@ LOC_HIDL_VERSION := 3.0
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_channel
 TARGET_RECOVERY_DEVICE_MODULES := libinit_channel
 
+# Jemalloc
+MALLOC_SVELTE := true
+MALLOC_SVELTE_FOR_LIBC32 := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom ehci-hcd.park=3 lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci androidboot.usbconfigfs=true
