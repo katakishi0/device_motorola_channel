@@ -54,6 +54,10 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
             done
             ;;
+        # Libutils-v31
+        vendor/lib/sensors.ssc.so | vendor/lib64/sensors.ssc.so)
+            "${PATCHELF}" --replace-needed libutils.so libutils-v31.so  "${2}"
+            ;;
         # memset shim
         vendor/bin/charge_only_mode)
             for  LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "${2}"); do
