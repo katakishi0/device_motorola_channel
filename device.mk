@@ -219,6 +219,9 @@ PRODUCT_PACKAGES += \
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
+# GApps
+-include vendor/gapps/arm64/arm64-vendor.mk
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl:64 \
