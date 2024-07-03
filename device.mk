@@ -70,7 +70,8 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libaudio-resampler \
     libqcomvoiceprocessing \
-    libvolumelistener
+    libvolumelistener \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
@@ -161,7 +162,8 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.3.vendor
+    android.hardware.drm@1.3.vendor \
+    libhidlmemory.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -173,7 +175,8 @@ PRODUCT_COPY_FILES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -377,11 +380,13 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.4.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
+    libsysutils.vendor \
     android.system.net.netd@1.1.vendor \
     android.hardware.secure_element@1.0.vendor:64 \
     CarrierConfigOverlay \
     librmnetctl \
-    libprotobuf-cpp-full
+    libprotobuf-cpp-full \
+    libsqlite.vendor
 
 # Recovery
 TARGET_RECOVERY_DENSITY := xhdpi
@@ -403,7 +408,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl:64 \
-    android.hardware.sensors@1.0-service
+    android.hardware.sensors@1.0-service \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
