@@ -125,7 +125,7 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Clang
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86//clang-6875598
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-6875598
 
 # Display
 USE_DEVICE_SPECIFIC_DISPLAY := true
