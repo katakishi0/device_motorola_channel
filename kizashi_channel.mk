@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/kizashi/config/common_full_phone.mk)
 
 # Inherit from channel device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,8 +28,17 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := channel
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_NAME := lineage_channel
+PRODUCT_NAME := kizashi_channel
 PRODUCT_MODEL := moto g(7) play
+
+# Kizashi flags
+LINEAGE_BUILDTYPE := UNNOFICIAL
+KIZASHI_BUILD_TYPE := vanilla
+TARGET_GAPPS_ARCH := arm64
+TARGET_FACE_UNLOCK_SUPPORTED := true
+KIZASHI_SHIP_ADAWAY := true
+#Gcam GO
+KIZASHI_INCLUDE_GCGOP := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=channel \
